@@ -7,7 +7,7 @@ with cte_heart_rate as (
         date_ts
         , hours
         , heart_rate
-    from dbt_project_health.raw_heart_rate
+    from {{source('dbt_project_health', 'raw_heart_rate')}}
 )
 
 , date_formatted as (
