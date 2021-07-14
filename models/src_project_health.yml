@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: project_health
-    database: dbt_project_health
-    tables:
-      - name: raw_heart_rate
-      - name: workout_logs
