@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: project_health
+    description: BigQuery db for project health
+    database: local-axis-317516
+    tables:
+      - name: dbt_project_health.raw_heart_rate
+        description: Raw heart rate data.
+        columns:
+          - name: heart_rate
+            description: raw heart rate ticks.
+            tests:
+              - not_null
+
