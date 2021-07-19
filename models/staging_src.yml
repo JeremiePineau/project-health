@@ -12,4 +12,6 @@ sources:
             description: raw heart rate ticks.
             tests:
               - not_null
+      - name: workout_logs
+        description: workout logs
 
